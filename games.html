@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="games.css" />
+    <title>Games GBK</title>
+  </head>
+  <body>
+    <h1>Games "Batu Gunting Kertas"</h1>
+
+    <div class="container">
+      <div class="row">
+        <div class="game-area">
+          <div class="area-player">
+            <p class="headername">PLAYER</p>
+            <ul>
+              <li>
+                <a href="#" onclick="myFunction('batu')"><img class="batu" id="batu-player" src="img/batu.png" /></a>
+              </li>
+              <li>
+                <a href="#" onclick="myFunction('gunting')"><img class="gunting" id="gunting-player" src="img/gunting.png" /></a>
+              </li>
+              <li>
+                <a href="#" onclick="myFunction('kertas')"><img class="kertas" id="kertas-player" src="img/kertas.png" /></a>
+              </li>
+            </ul>
+          </div>
+          <div id="info">Result</div>
+          <div class="area-com">
+            <p class="headername">COMPUTER</p>
+            <ul>
+              <li>
+                <a href="#"><img class="batu" id="batucom" src="img/batu.png" /></a>
+              </li>
+              <li>
+                <a href="#"><img class="gunting" id="guntingcom" src="img/gunting.png" /></a>
+              </li>
+              <li>
+                <a href="#"><img class="kertas" id="kertascom" src="img/kertas.png" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="score-area">
+          <h2>SCORE BOARD</h2>
+          <div class="row">
+            <div class="playername">Player</div>
+            <div class="comname">Computer</div>
+            <div id="playerscore">0</div>
+            <div id="comscore">0</div>
+          </div>
+          <button id="restart">RESTART</button>
+        </div>
+      </div>
+    </div>
+    <script src="./games.js"></script>
+  </body>
+</html>
